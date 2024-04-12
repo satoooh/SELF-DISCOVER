@@ -1,0 +1,19 @@
+{
+    "name": "rye-workspace",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "eamodio.gitlens",
+                "christian-kohler.path-intellisense",
+                "MS-CEINTL.vscode-language-pack-ja",
+                "ms-python.python",
+                "ms-toolsai.jupyter"
+            ]
+        }
+    },
+    "remoteUser": "vscode",
+    "postCreateCommand": "/bin/sh .devcontainer/postCreateCommand.sh"
+}
